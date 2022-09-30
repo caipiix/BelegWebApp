@@ -2,12 +2,16 @@ let userCurrentlyLoggedIn = null;
 let userLoggedIn = false;
 let isUserAdmin = null;
 
+/**
+ * Default Page if aint logged in
+ */
 if (userLoggedIn === false) {
     document.getElementById('mainScreenDiv').classList.add("hidden");
     document.getElementById('addContactDiv').classList.add("hidden");
     document.getElementById('updateContactDiv').classList.add("hidden");
     document.getElementById('logoutScreenDiv').classList.add("hidden");
 }
+
 
 // add listener to Buttons
 
@@ -35,8 +39,8 @@ cancelUpdateContactButton.addEventListener("click", cancelUpdateContactButtonCli
 let logoutButton = document.getElementById("bnt_Logout");
 logoutButton.addEventListener("click", logoutButtonClicked);
 
-// click Events on Buttons
 
+// click Events on Buttons
 
 /**
  * Site login and move to main menu
