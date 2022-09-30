@@ -21,9 +21,14 @@ Project description:
     
     /contacts aktzeptiert alle 4 HTTP Requests für die CRUDs von Kontakten.
 
+All dependendies are stored in package.json
+    
+    run:
+    npm install
+
 import start advizDB and store data 
 
-    Make sure Node.JS & mongo.DB are installed on your device
+    Make sure Node.JS & mongoDB are installed on your device !important
     run:
     node /path/to/BelegWebApp/yourScriptfile.js
 
