@@ -23,7 +23,8 @@ MongoClient.connect(url, {useUnifiedTopology: true}, function (err, client) {
     })
 
     // add many users
-    var myobj3 = [{
+    var myobj3 = [
+        {
         firstname: "Admin Private",
         lastname: "Contact",
         street: "Reinickendorfer Straße 17",
@@ -82,5 +83,6 @@ MongoClient.connect(url, {useUnifiedTopology: true}, function (err, client) {
     mongoClient.collection("contacts").insertMany(myobj3, function (err, res) {
         if (err) throw err;
         console.log("many objects were added in collection contacts")
+        process.exit(1);
     });
 })
