@@ -183,8 +183,8 @@ async function addButtonClicked() {
  * @param contact
  */
 function createButton(contact) {
-    let btn = document.createElement("BUTTON");   // Create a <button> element
-    btn.innerHTML = contact.firstname + " " + contact.lastname;                   // Insert text
+    let btn = document.createElement("BUTTON");
+    btn.innerHTML = contact.firstname + " " + contact.lastname;
     document.getElementById("contactsID").append(btn);
     btn.addEventListener("click", function () {
         contactButtonClicked(contact);
