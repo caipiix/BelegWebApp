@@ -1,0 +1,21 @@
+{
+  "name": "belegwebapp",
+  "version": "1.0.0",
+  "description": "Application to pass exams",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"Error: no tests speicfied\\\" && exit"
+  },
+  "author": "Kev",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "debug": "^4.3.4",
+    "express": "^4.18.1",
+    "http-errors": "^2.0.0",
+    "jade": "^0.29.0",
+    "leaflet": "^1.9.1",
+    "mongodb": "^4.10.0",
+    "morgan": "^1.10.0"
+  }
+}

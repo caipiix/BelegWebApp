@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Our First AdViz</title>
+    <link rel="stylesheet" href="stylesheets/advizstyle.css">
+</head>
+<body>
+
+<div id="loginScreenDiv">
+    <form>
+        <div class="login">
+            <label for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" id="uname" required>
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" id="psw" required>
+
+            <button id="bnt_Login" type="button">Login</button>
+        </div>
+    </form>
+</div>
+
+<div id="logoutScreenDiv">
+    <button id="bnt_Logout" type="button">Logout</button>
+</div>
+
+<div id="mainScreenDiv">
+    <div class="sidenav">
+        <h1 id="greetingHeader"></h1>
+        <input type="button" id="mainmenu_btn_showMyContacts" value="Show my Contacts">
+        <input type="button" id="mainmenu_btn_showAllContacts" value="Show All Contacts">
+        <input type="button" id="mainmenu_btn_addContact" value="Add New Contact">
+        <hr>
+        <div class="contacts" id="contactsID">
+        </div>
+    </div>
+    <div id="map"></div>
+    <script src="javascripts/ol.js"></script>
+    <link rel="stylesheet" href="stylesheets/ol.css">
+    <script src="javascripts/map.js"></script>
+
+</div>
+
+<div id="addContactDiv">
+    <form>
+        <div class="input_box">
+            <label for="addFirstName" class="input_lable">First Name: </label>
+            <input type="text" placeholder="Enter Firstname" id="addFirstName"
+                   name="addFirstName" required="required">
+            <br>
+            <label for="addLastName" class="input_lable">Last Name: </label>
+            <input type="text" placeholder="Enter Lastname" id="addLastName" name="addLastName"
+                   required="required">
+            <br>
+            <label for="addStreetName" class="input_lable">Street Name: </label>
+            <input type="text" placeholder="Enter Streetname & Nr" id="addStreetName"
+                   name="addStreetName" required="required">
+            <br>
+            <label for="addZipCode" class="input_lable">ZIP Code: </label>
+            <input type="number" placeholder="Enter ZIP Code" id="addZipCode" name="addZipCode"
+                   required="required">
+            <br>
+            <label for="addCity" class="input_lable">City: </label>
+            <input type="text" placeholder="Enter Cityname" id="addCity" name="addCity" required="required">
+            <br>
+            <label for="addCountry" class="input_lable">Country: </label>
+            <input type="text" placeholder="Enter Country" id="addCountry" name="addCountry" required="required">
+            <br>
+            <label for="addPhone" class="input_lable">Phonenumber: </label>
+            <input type="number" placeholder="Enter Phonenumber" id="addPhone" name="addPhone">
+            <br>
+            <label for="addDoB" class="input_lable">DoB: </label>
+            <input type="date" placeholder="Enter DoB" id="addDoB" name="addDoB">
+            <br>
+            <label for="addPrivacy" class="input_lable">Private? : </label>
+            <input type="checkbox" id="addPrivacy" name="addPrivacy">
+            <br>
+            <input class="input_box_buttons" type="button" id="btn_add_new_contact" name="btn_add_new_contact"
+                   value="Add"/>
+            <input class="input_box_buttons" type="button" id="btn_cancel_add_new_contact"
+                   name="btn_cancel_add_new_contact" value="Cancel"/>
+        </div>
+    </form>
+</div>
+
+<div id="updateContactDiv">
+    <form>
+        <div class="input_box">
+            <label for="updateFirstname" class="input_lable">First Name: </label>
+            <input type="text" id="updateFirstname" name="updateFirstname" required="required">
+            <br>
+            <label for="updateLastname" class="input_lable">Last Name: </label>
+            <input type="text" id="updateLastname" name="updateLastname" required="required">
+            <br>
+            <label for="updateStreetName" class="input_lable">Street Name: </label>
+            <input type="text" id="updateStreetName" name="updateStreetName" required="required">
+            <br>
+            <label for="updateZipCode" class="input_lable">ZIP Code: </label>
+            <input type="number" id="updateZipCode" name="updateZipCode" required="required">
+            <br>
+            <label for="updateCity" class="input_lable">City: </label>
+            <input type="text" id="updateCity" name="updateCity" required="required">
+            <br>
+            <label for="updateCountry" class="input_lable">Country: </label>
+            <input type="text" id="updateCountry" name="updateCountry" required="required">
+            <br>
+            <label for="updatePhone" class="input_lable">Phonenumber: </label>
+            <input type="number" id="updatePhone" name="updatePhone">
+            <br>
+            <label for="updateDoB" class="input_lable">DoB: </label>
+            <input type="date" id="updateDoB" name="updateDoB">
+            <br>
+            <label for="updatePrivacy" class="input_lable">Private? : </label>
+            <input type="checkbox" id="updatePrivacy" name="updatePrivacy" checked/>
+            <br>
+            <input class="input_box_buttons" type="button" id="btn_delete" name="btn_delete" value="Delete"/>
+            <input class="input_box_buttons" type="button" id="btn_update" name="btn_update" value="Update"/>
+            <input class="input_box_buttons" type="button" id="btn_cancel_update" name="btn_cancel_update"
+                   value="Cancel"/>
+        </div>
+    </form>
+</div>
+
+</body>
+<footer>
+    <script src="javascripts/logic.js"></script>
+    <script src="javascripts/crud.js"></script>
+</footer>
+</html>
