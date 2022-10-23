@@ -1,7 +1,4 @@
-adVizStyle ist ein Projekt von:
 
-    Kevin Lisse
-    Matrikel-Nr. 573586
 
 Project description:
     
